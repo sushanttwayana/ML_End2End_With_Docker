@@ -66,5 +66,5 @@ def predict_note_file():
     prediction = classifier.predict(df_test)
     return "The predicted values are " + str(list(prediction))
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
